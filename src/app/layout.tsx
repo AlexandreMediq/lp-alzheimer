@@ -20,7 +20,7 @@ const rocGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Alzheimer",
+  title: "Alzheimer - TribeMD",
   description: "Aprenda o que é Alzheimer",
 }
 

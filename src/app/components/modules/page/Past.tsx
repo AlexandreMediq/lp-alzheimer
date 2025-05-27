@@ -1,4 +1,4 @@
-export default function Passado() {
+export default function Past() {
     return (
       <section className="p-6 bg-gray-100">
         <h2 className="text-2xl font-bold mb-4">Passado</h2>
@@ -6,4 +6,3 @@ export default function Passado() {
       </section>
     );
   }
-  

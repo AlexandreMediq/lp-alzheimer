@@ -3,20 +3,20 @@ import { useState } from "react";
 import Navbar from "./components/modules/Navbar";
 import Profile from "./components/modules/Profile";
 import About from "./components/modules/About";
-import Inicio from "./components/modules/page/Inicio";
-import Passado from "./components/modules/page/Passado";
+import Start from "./components/modules/page/Start";
+import Past from "./components/modules/page/Past";
 
 export default function Home() {
-  const [currentSection, setCurrentSection] = useState("inicio");
+  const [currentSection, setCurrentSection] = useState("start");
 
   const renderSection = () => {
     switch (currentSection) {
-      case "inicio":
-        return <Inicio />;
-      case "passado":
-        return <Passado />;
+      case "start":
+        return <Start />;
+      case "past":
+        return <Past />;
       default:
-        return <Inicio />;
+        return <Start />;
     }
   };
 

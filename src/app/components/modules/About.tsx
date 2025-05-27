@@ -4,8 +4,8 @@ type AboutProps = {
 
 export default function About({ onSelect }: AboutProps) {
   return (
-    <nav className="w-full bg-white py-4">
-      <ol className="flex justify-center flex-wrap gap-6 text-[#3b97de] font-semibold text-sm md:text-base">
+    <nav className="w-full bg-[#d8eaf8] py-4">
+      <ol className="flex justify-center flex-wrap max-w-[1200px] mx-auto gap-6 text-[#3b97de] font-semibold text-sm md:text-base">
         <li
           className="cursor-pointer hover:underline underline-offset-4 transition"
           onClick={() => onSelect("start")}

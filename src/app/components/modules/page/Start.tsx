@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-import {
+import { // Importe dos icons
   FaGlobeAmericas,
   FaChartLine,
   FaHeartbeat,
@@ -16,6 +16,8 @@ import {
 export default function Start() {
   const timer = useRef<NodeJS.Timeout | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const [isGrabbing, setIsGrabbing] = useState(false); // Estado para controlar o cursor
 
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
     {
@@ -57,14 +59,22 @@ export default function Start() {
   );
 
   return (
+    <>
     <section className="p-6 bg-[#d8eaf8] text-[#001965]">
       <h2 className="text-4xl font-bold mb-6 text-center">
-        Introdução à Doença de Alzheimer
+        Introdu o   Doen a de Alzheimer
       </h2>
 
       <div className="flex justify-center">
-        <div ref={sliderRef} className="keen-slider max-w-xl w-[1200px]">
-
+        <div
+          ref={sliderRef}
+          className={`keen-slider max-w-xl w-[1200px] ${
+            isGrabbing ? "cursor-grabbing" : "cursor-grab" // Define o cursor
+          }`}
+          onMouseDown={() => setIsGrabbing(true)}
+          onMouseUp={() => setIsGrabbing(false)}
+          onMouseLeave={() => setIsGrabbing(false)}
+        >
           <div className="keen-slider__slide text-[#001965] rounded-lg p-6 flex flex-col md:flex-row items-center gap-4">
             <div className="w-14 h-14 flex items-center justify-center shrink-0 text-[#001965]">
               <FaGlobeAmericas className="w-10 h-10" />
@@ -140,10 +150,29 @@ export default function Start() {
           </div>
         </div>
       </div>
-        <div className="text-center text-[#001965] font-medium">
-          {currentSlide + 1} / 7
-        </div>
+      
+      <div className="mt-6 flex justify-center gap-2"> 
+        {[...Array(7)].map((_, idx) => ( // contagem dos carrosel 
+          <button
+            key={idx}
+            onClick={() => instanceRef.current?.moveToIdx(idx)}
+            className={`
+              w-3 h-3 rounded-full transition-all
+              ${currentSlide === idx ? "bg-[#001965]" : "bg-[#001965]/30"}
+            `}
+          />
+        ))}
+      </div>
     </section>
+    <section>
+      <div className="text-center bg-[#fafafa] p-4">
+        <h1 className="text-4xl font-bold text-[#001965]">Diagnóstico da Doença de Alzheimer</h1>
+        <p className="text-[#001965]">A Doença de Alzheimer historicamente é diagnosticada em pacientes com problemas de memória com base em apresentações clínicas; no entanto, cerca de 20% dos casos são diagnosticados erroneamente.</p>
+        <p>O diagnóstico clínico se baseia na obtenção de um histórico detalhado do paciente e sua família; a investigação diagnóstica padrão inclui um teste de avaliação cognitiva, e um inventário das atividades cotidianas, assim como hemogramas e imagens da estrutura cerebral (RM, TC) para excluir outros casos de comprometimento cognitivo.</p>
+        <p>Para diagnosticar a Doença de Alzheimer com segurança, são necessários biomarcadores (concentrações de amiloide-beta e p-tau no LCR ou imagens PET do cérebro) para complementar a avaliação clínica</p>
+      </div>
+    </section>
+    </>
   );
 }
 

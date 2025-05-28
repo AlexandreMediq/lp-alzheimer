@@ -11,6 +11,9 @@ import { // Importe dos icons
   FaVial,
   FaVenus,
   FaUserClock,
+  FaArrowRight,
+  FaTint,
+  FaStethoscope,
 } from "react-icons/fa";
 
 export default function Start() {
@@ -61,9 +64,9 @@ export default function Start() {
   return (
     <>
     <section className="p-6 bg-[#d8eaf8] text-[#001965]">
-      <h2 className="text-4xl font-bold mb-6 text-center">
-        Introdu o   Doen a de Alzheimer
-      </h2>
+      <h1 className="text-5xl font-bold mb-6 text-center">
+      Introdução à Doença de Alzheimer
+      </h1>
 
       <div className="flex justify-center">
         <div
@@ -164,14 +167,91 @@ export default function Start() {
         ))}
       </div>
     </section>
-    <section>
-      <div className="text-center bg-[#fafafa] p-4">
-        <h1 className="text-4xl font-bold text-[#001965]">Diagnóstico da Doença de Alzheimer</h1>
-        <p className="text-[#001965]">A Doença de Alzheimer historicamente é diagnosticada em pacientes com problemas de memória com base em apresentações clínicas; no entanto, cerca de 20% dos casos são diagnosticados erroneamente.</p>
-        <p>O diagnóstico clínico se baseia na obtenção de um histórico detalhado do paciente e sua família; a investigação diagnóstica padrão inclui um teste de avaliação cognitiva, e um inventário das atividades cotidianas, assim como hemogramas e imagens da estrutura cerebral (RM, TC) para excluir outros casos de comprometimento cognitivo.</p>
-        <p>Para diagnosticar a Doença de Alzheimer com segurança, são necessários biomarcadores (concentrações de amiloide-beta e p-tau no LCR ou imagens PET do cérebro) para complementar a avaliação clínica</p>
+
+    <section className="bg-[#fafafa] text-[#001965] py-12">
+      <div className="px-4 max-w-[1200px] mx-auto text-justify">
+        <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold">
+          Diagn&oacute;stico da Doen&ccedil;a de Alzheimer
+        </h1>
+
+        {/* Par&aacute;grafo 1 */}
+        <div className="flex flex-col sm:flex-row items-start gap-3 mt-6">
+          <div className="min-w-[24px] h-6 flex items-start justify-center pt-1 shrink-0">
+            <FaArrowRight className="w-6 h-6 text-[#001965]" />
+          </div>
+          <p className="text-base sm:text-lg md:text-2xl break-words">
+            A Doen&ccedil;a de Alzheimer historicamente &eacute; diagnosticada em pacientes com problemas de mem&oacute;ria com base em apresenta&ccedil;&otilde;es cl&iacute;nicas; no entanto, cerca de
+            <span className="font-bold"> 20% dos casos s&atilde;o diagnosticados erroneamente. </span>
+          </p>
+        </div>
+
+        {/* Par&aacute;grafo 2 */}
+        <div className="flex flex-col sm:flex-row items-start gap-3 mt-6">
+          <div className="min-w-[24px] h-6 flex items-start justify-center pt-1 shrink-0">
+            <FaArrowRight className="w-6 h-6 text-[#001965]" />
+          </div>
+          <p className="text-base sm:text-lg md:text-2xl break-words">
+            O <span className="font-bold">diagn&oacute;stico cl&iacute;nico</span> se baseia na <span className="font-bold">obten&ccedil;&atilde;o de um hist&oacute;rico</span> detalhado do paciente e sua fam&iacute;lia; a investiga&ccedil;&atilde;o diagn&oacute;stica padr&atilde;o inclui um <span className="font-bold">teste de avalia&ccedil;&atilde;o cognitiva</span>, um <span className="font-bold">invent&aacute;rio das atividades cotidianas</span>, <span className="font-bold">hemogramas</span> e <span className="font-bold">imagens da estrutura cerebral</span> (RM, TC).
+          </p>
+        </div>
+
+        {/* Par&aacute;grafo 3 */}
+        <div className="flex flex-col sm:flex-row items-start gap-3 mt-6">
+          <div className="min-w-[24px] h-6 flex items-start justify-center pt-1 shrink-0">
+            <FaArrowRight className="w-6 h-6 text-[#001965]" />
+          </div>
+          <p className="text-base sm:text-lg md:text-2xl break-words">
+            Para diagnosticar a Doen&ccedil;a de Alzheimer com seguran&ccedil;a, s&atilde;o necess&aacute;rios <span className="font-bold">biomarcadores</span> (como amiloide-beta e p-tau no LCR ou imagens PET) para <span className="font-bold">complementar a avalia&ccedil;&atilde;o cl&iacute;nica.</span>
+          </p>
+        </div>
+      </div>
+
+      {/* Cards com &iacute;cones */}
+      <div className="max-w-[1200px] mx-auto px-4 mt-10 flex flex-col lg:flex-row gap-6">
+        {/* Card 1 */}
+        <div className="bg-[#d8eaf8] p-5 flex flex-col sm:flex-row items-center gap-4 w-full rounded-md shadow">
+          <div className="flex-shrink-0">
+            <FaTint className="w-14 h-14 sm:w-20 sm:h-20 text-[#8A0303]" />
+          </div>
+          <p className="text-base sm:text-lg text-justify">
+            <span className="font-bold">Novos biomarcadores sangu&iacute;neos</span> est&atilde;o sendo desenvolvidos e podem ser mais acess&iacute;veis e custo-efetivos para facilitar um diagn&oacute;stico mais r&aacute;pido e precoce da Doen&ccedil;a de Alzheimer em pessoas com comprometimento cognitivo.
+          </p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="bg-[#d8eaf8] p-5 flex flex-col sm:flex-row items-center gap-4 w-full rounded-md shadow">
+          <div className="flex-shrink-0">
+            <FaStethoscope className="w-14 h-14 sm:w-20 sm:h-20 text-[#28A745]" />
+          </div>
+          <p className="text-base sm:text-lg text-justify">
+            As pr&aacute;ticas cl&iacute;nicas variam de pa&iacute;s para pa&iacute;s, e <span className="font-bold">diferentes especialistas de sa&uacute;de</span> &mdash; como psiquiatras, neurologistas, geriatras e m&eacute;dicos da aten&ccedil;&atilde;o b&aacute;sica &mdash; <span className="font-bold">podem estar envolvidos no diagn&oacute;stico da DA.</span>
+          </p>
+        </div>
       </div>
     </section>
+
+    {/* Saiba Mais */}    
+    <section className="p-6 bg-[#FAFAFA] text-[#001965]">
+      <h1 className="text-4xl text-center font-bold  mb-4 ">Saiba Mais</h1>
+
+      <div className="max-w-[1200px] mx-auto flex lg:flex-row gap-6">
+        {/* Card 1 */}
+        <div className="w-[300px] bg-[#fafafa] p-4 text-center shadow rounded-lg hover:scale-105 transition cursor-pointer">
+          <img className="max-w-[150px] mx-auto" src="./img/home-icon10.svg" alt="imagem cerebro" />
+          <p className="font-bold  text-base sm:text-lg">O passado, o presente e o futuro da Doen&ccedil;a de
+          Alzheimer&nbsp;</p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="w-[300px] bg-[#fafafa] p-4 text-center shadow rounded-lg hover:scale-105 transition cursor-pointer">
+          <img className="max-w-[100px] mx-auto" src="./img/home-icon11.svg" alt="imagem cerebro" />
+          <p className="font-bold text-base sm:text-lg">O passado, o presente e o futuro da Doen&ccedil;a de
+          Alzheimer&nbsp;</p>
+        </div>
+
+      </div>
+    </section>
+
     </>
   );
 }

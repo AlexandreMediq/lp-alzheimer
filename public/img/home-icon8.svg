@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.79 103">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle cx="16.1" cy="80.31" r="6.43" style="fill: none; stroke: #eea7bf; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <circle cx="79.91" cy="22.93" r="6.43" style="fill: none; stroke: #eea7bf; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <ellipse cx="46.39" cy="51.5" rx="18.57" ry="50" style="fill: none; stroke: #eea7bf; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <ellipse cx="46.39" cy="51.5" rx="18.57" ry="50" transform="translate(-20.95 67.9) rotate(-61.67)" style="fill: none; stroke: #eea7bf; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <path d="M73.47,22.9c-9.88.97-22.79,5.19-35.89,12.25C13.27,48.26-2.48,66.2,2.38,75.23c1.35,2.5,4.14,4.05,7.98,4.72" style="fill: none; stroke: #eea7bf; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <path d="M22.5,79.69c9.39-1.47,20.97-5.52,32.7-11.84,24.31-13.1,40.07-31.05,35.2-40.07-.8-1.48-2.09-2.62-3.82-3.45" style="fill: none; stroke: #eea7bf; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <circle cx="46.39" cy="51.74" r="8.81" style="fill: none; stroke: #eea7bf; stroke-miterlimit: 10; stroke-width: 3px;"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.68 103">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon points="60.36 16.5 60.36 7.41 53.09 1.5 42.18 1.5 34.91 7.41 34.91 16.5 60.36 16.5" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <polyline points="60.36 9 82.18 9 82.18 91.73 13.09 91.73 13.09 9 34.91 9" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <polyline points="70.59 91.73 70.59 101.5 1.5 101.5 1.5 18.77 13.09 18.77" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <polyline points="26.73 38.09 31.16 42.52 39.34 34.34" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <line x1="46.73" y1="38.43" x2="68.77" y2="38.43" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <polyline points="26.73 52.09 31.16 56.52 39.34 48.34" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <line x1="46.73" y1="52.43" x2="68.77" y2="52.43" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <polyline points="26.73 66.08 31.16 70.51 39.34 62.33" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+      <line x1="46.73" y1="66.42" x2="68.77" y2="66.42" style="fill: none; stroke: #939aa7; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
+    </g>
+  </g>
+</svg>

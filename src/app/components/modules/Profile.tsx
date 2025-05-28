@@ -1,5 +1,3 @@
-import BrainModel from "./BrainModel";
-
 function Profile() {
   return (
     <section>
